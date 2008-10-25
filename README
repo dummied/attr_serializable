@@ -1,13 +1,22 @@
 AttrSerializable
 ================
 
-Introduction goes here.
+This plugin makes it easy to create a whitelist of attributes for your models that you want to be returned when using the to_xml and to_json attributes.
 
 
 Example
 =======
 
-Example goes here.
+  class User < ActiveRecord::Base
+    attr_serializable :login, :name
+    ...
+  end
+
+  User.find(:first).to_xml # => "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<user>\n  <login>joey</login>\n  <name>Joey Schoblaska</name>\n</user>\n"
 
 
-Copyright (c) 2008 [name of plugin creator], released under the MIT license
+Author:
+   Joey Schoblaska
+   Zen Web Apps, LLC
+
+Copyright (c) 2008 Joey Schoblaska, released under the MIT license
