@@ -1,7 +1,7 @@
 AttrSerializable
 ================
 
-This plugin makes it easy to create a whitelist of attributes for your models that you want to be returned when using the to_xml and to_json attributes.
+This plugin makes it easy to create a whitelist of attributes for your models for use in their to_xml and to_json methods.
 
 
 Example
