@@ -4,6 +4,7 @@ AttrSerializable
 This plugin makes it easy to create a whitelist of attributes for your models for use in their to_xml and to_json methods.
 
 
+
 Example
 =======
 
@@ -15,8 +16,11 @@ Example
   User.find(:first).to_xml # => "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<user>\n  <login>joey</login>\n  <name>Joey Schoblaska</name>\n</user>\n"
 
 
-Author:
-   Joey Schoblaska
-   Zen Web Apps, LLC
+
+Author
+======
+
+Joey Schoblaska
+Zen Web Apps, LLC
 
 Copyright (c) 2008 Joey Schoblaska, released under the MIT license
